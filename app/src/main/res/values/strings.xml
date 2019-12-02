@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyRoom</string>
+    <string name="kakao_app_key">e8bebe9591babbc2f057b6a2211892af</string>
+    <string name="google_app_key">AIzaSyBWzh-xdJiGiGRES4lON5TZC6eCdHBwvt4</string>
+</resources>

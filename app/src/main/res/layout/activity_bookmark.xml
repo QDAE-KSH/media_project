@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#ff7040"
+            android:layout_height="60dp">
+        <TextView
+                android:textColor="#ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="25dp"
+                android:text="즐겨찾기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18.3dp"
+            android:layout_marginEnd="18.7dp"
+            android:layout_marginTop="11dp"
+            card_view:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_dest_2"
+                    android:textSize="20dp"
+                    android:text="목적지 : 넥슨 코리아"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_trans_2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_dest_2"
+                    android:textSize="20dp"
+                    android:text="대중교통 60분 이내"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_trans2_2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trans_2"
+                    android:textSize="20dp"
+                    android:text="60분 이내"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_count_2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trans2_2"
+                    android:textSize="20dp"
+                    android:text="항목 1개"
+                    android:textColor="#ff7040"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_sk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18.3dp"
+            android:layout_marginEnd="18.7dp"
+            android:layout_marginTop="11dp"
+            card_view:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_dest"
+                    android:textSize="20dp"
+                    android:text="목적지 : SK텔레콤 T타워"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_trans"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_dest"
+                    android:textSize="20dp"
+                    android:text="대중교통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_trans2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trans"
+                    android:textSize="20dp"
+                    android:text="50분 이내"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/txt_count"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trans2"
+                    android:textSize="20dp"
+                    android:text="항목 2개"
+                    android:textColor="#ff7040"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

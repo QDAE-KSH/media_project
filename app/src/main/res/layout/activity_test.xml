@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="#eeeeee">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#ff7040"
+            android:layout_height="60dp">
+        <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#ffffff"
+                android:text="SK텔레콤 T타워"
+                android:textSize="20dp"></TextView>
+        <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#ffffff"
+                android:text="50분 이내"
+                android:textSize="15dp"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+            android:id="@+id/nts_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:nts_active_color="#42a4d1"
+            app:nts_color="#42a4d1"
+            app:nts_corners_radius="1dp"
+            app:nts_inactive_color="#ff1a1e23"
+            app:nts_size="15sp"
+            app:nts_titles="@array/titles"
+            app:nts_weight="3dp"/>
+    <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+    >
+        <Spinner
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="지역별"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:entries="@array/seoul"/>
+        <Button
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="시간순"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+        <Button
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="가격순"
+                android:textAlignment="center"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+             android:layout_height="match_parent">
+        <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/txt_title"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="my room"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/righteous"/>
+
+        <com.gigamole.navigationtabstrip.NavigationTabStrip
+                android:id="@+id/nts_top"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:nts_active_color="#42a4d1"
+                app:nts_color="#42a4d1"
+                app:nts_corners_radius="1dp"
+                app:nts_inactive_color="#ff1a1e23"
+                app:nts_size="15sp"
+                app:nts_titles="@array/titles"
+                app:nts_weight="3dp"/>
+        <androidx.viewpager.widget.ViewPager
+                app:layout_constraintTop_toBottomOf="@id/txt_title"
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>
